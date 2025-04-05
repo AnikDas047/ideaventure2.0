@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | IdeaVenture</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="video-bg">
+        <video autoplay muted loop playsinline>
+            <source src="videos/bg-animation.mp4" type="video/mp4">
+        </video>
+        <div class="color-overlay"></div>
+    </div>
+    
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo" data-aos="fade-down">
+                    <img src="images/logo.png" alt="IdeaVenture">
+                </div>
+                <ul class="nav-links" data-aos="fade-down">
+                    <li><a href="index.html"><span>Home</span></a></li>
+                    <li><a href="about.html"><span>About</span></a></li>
+                    <li><a href="events.html" class="active"><span>Events</span></a></li>
+                    <li><a href="gallery.html"><span>Gallery</span></a></li>
+                    <li><a href="contact.html"><span>Contact</span></a></li>
+                    <li><a href="tickets.html" class="btn btn-gradient"><span>Get Tickets</span></a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1 data-aos="fade-up">Our Events</h1>
+                <p data-aos="fade-up" data-aos-delay="200">Experiences that'll blow your mind</p>
+            </div>
+        </section>
+
+        <section class="events-section">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Upcoming Experiences</h2>
+                    <p>Don't miss out on these epic gatherings</p>
+                </div>
+                
+                <div class="event-cards">
+                    <div class="event-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="event-image">
+                            <img src="images/events/neon-dreams-2023.jpg" alt="Neon Dreams">
+                            <div class="event-date">
+                                <span class="day">15</span>
+                                <span class="month">Jun</span>
+                            </div>
+                        </div>
+                        <div class="event-details">
+                            <div class="event-tag">Featured</div>
+                            <h3>Neon Dreams</h3>
+                            <div class="event-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Digital Frontier</span>
+                                <span><i class="fas fa-clock"></i> 3 Days</span>
+                            </div>
+                            <p>A futuristic journey through light, sound and digital art that will redefine your perception of reality.</p>
+                            <div class="event-footer">
+                                <a href="tickets.html" class="btn btn-gradient">Get Tickets</a>
+                                <button class="btn btn-text">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="event-image">
+                            <img src="images/events/mindscape-2023.jpg" alt="Mindscape">
+                            <div class="event-date">
+                                <span class="day">22</span>
+                                <span class="month">Aug</span>
+                            </div>
+                        </div>
+                        <div class="event-details">
+                            <h3>Mindscape</h3>
+                            <div class="event-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> The IdeaSphere</span>
+                                <span><i class="fas fa-clock"></i> 4 Days</span>
+                            </div>
+                            <p>An immersive journey through the landscapes of imagination with interactive installations and performances.</p>
+                            <div class="event-footer">
+                                <a href="tickets.html" class="btn btn-gradient">Get Tickets</a>
+                                <button class="btn btn-text">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- New event card -->
+                    <div class="event-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="event-image">
+                            <img src="images/events/tech-fusion-2023.jpg" alt="Tech Fusion">
+                            <div class="event-date">
+                                <span class="day">10</span>
+                                <span class="month">Oct</span>
+                            </div>
+                        </div>
+                        <div class="event-details">
+                            <div class="event-tag">New</div>
+                            <h3>Tech Fusion</h3>
+                            <div class="event-meta">
+                                <span><i class="fas fa-map-marker-alt"></i> Innovation Hub</span>
+                                <span><i class="fas fa-clock"></i> 2 Days</span>
+                            </div>
+                            <p>Where technology meets creativity in a collision of ideas. Featuring workshops, demos, and interactive exhibits.</p>
+                            <div class="event-footer">
+                                <a href="tickets.html" class="btn btn-gradient">Get Tickets</a>
+                                <button class="btn btn-text">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Adding a new section for featured event videos -->
+        <section class="featured-event-video">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Featured Event Preview</h2>
+                    <p>Get a taste of what's coming next</p>
+                </div>
+                
+                <div class="video-feature" data-aos="fade-up">
+                    <div class="video-container">
+                        <video controls poster="images/video-thumbnails/neon-dreams-promo.jpg">
+                            <source src="videos/neon-dreams-promo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-info">
+                        <h3>Neon Dreams 2023: Official Trailer</h3>
+                        <p>Get a preview of this year's flagship event. Experience the fusion of technology, art, and music like never before.</p>
+                        <a href="tickets.html" class="btn btn-gradient">Reserve Your Spot</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="past-events">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Past Highlights</h2>
+                    <p>Relive the magic from previous years</p>
+                </div>
+                
+                <div class="past-event-grid">
+                    <div class="past-event" data-aos="fade-up" data-aos-delay="200">
+                        <div class="past-event-image">
+                            <img src="images/events/digital-dawn-2022.jpg" alt="Digital Dawn">
+                            <div class="play-button" data-video="videos/digital-dawn-recap.mp4">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <h3>Digital Dawn 2022</h3>
+                        <p>The beginning of our virtual reality experience series</p>
+                    </div>
+                    
+                    <div class="past-event" data-aos="fade-up" data-aos-delay="300">
+                        <div class="past-event-image">
+                            <img src="images/events/creative-convergence-2021.jpg" alt="Creative Convergence">
+                            <div class="play-button" data-video="videos/creative-convergence-recap.mp4">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <h3>Creative Convergence 2021</h3>
+                        <p>Where artists and technologists first came together</p>
+                    </div>
+                    
+                    <div class="past-event" data-aos="fade-up" data-aos-delay="400">
+                        <div class="past-event-image">
+                            <img src="images/events/ideafest-2020.jpg" alt="IdeaFest">
+                            <div class="play-button" data-video="videos/ideafest-recap.mp4">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <h3>IdeaFest 2020</h3>
+                        <p>Our inaugural event that started it all</p>
+                    </div>
+                </div>
+                
+                <div class="cta" data-aos="fade-up">
+                    <a href="gallery.html" class="btn btn-outline">
+                        <span>View Full Gallery</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo.png" alt="IdeaVenture" class="footer-logo">
+                    <p>Where ideas come alive and creativity thrives</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="links-column">
+                        <h3>Explore</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </div>
+                    <div class="links-column">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms</a></li>
+                        </ul>
+                    </div>
+                    <div class="links-column">
+                        <h3>Join Us</h3>
+                        <ul>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Volunteer</a></li>
+                            <li><a href="#">Sponsors</a></li>
+                            <li><a href="#">Creators</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 IdeaVenture. All rights reserved. Made with <i class="fas fa-heart"></i> for innovators</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="animations.js"></script>
+    
+    <!-- Add this JavaScript to make video play buttons work -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all play buttons
+            const playButtons = document.querySelectorAll('.play-button[data-video]');
+            
+            // Create a modal for video playback
+            const videoModal = document.createElement('div');
+            videoModal.className = 'video-modal';
+            videoModal.innerHTML = `
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <div class="video-container">
+                        <video controls id="modal-video">
+                            <source src="" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(videoModal);
+            
+            // Get the modal video element
+            const modalVideo = document.getElementById('modal-video');
+            
+            // Add click event to all play buttons
+            playButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const videoSrc = this.getAttribute('data-video');
+                    modalVideo.querySelector('source').src = videoSrc;
+                    modalVideo.load();
+                    videoModal.style.display = 'flex';
+                    modalVideo.play();
+                });
+            });
+            
+            // Close modal when clicking the close button
+            document.querySelector('.close-modal').addEventListener('click', function() {
+                videoModal.style.display = 'none';
+                modalVideo.pause();
+            });
+            
+            // Close modal when clicking outside the content
+            videoModal.addEventListener('click', function(event) {
+                if (event.target === videoModal) {
+                    videoModal.style.display = 'none';
+                    modalVideo.pause();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | IdeaVenture</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="video-bg">
+        <video autoplay muted loop playsinline>
+            <source src="videos/bg-animation.mp4" type="video/mp4">
+        </video>
+        <div class="color-overlay"></div>
+    </div>
+    
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo" data-aos="fade-down">
+                    <img src="images/logo.png" alt="IdeaVenture">
+                </div>
+                <ul class="nav-links" data-aos="fade-down">
+                    <li><a href="index.html"><span>Home</span></a></li>
+                    <li><a href="about.html"><span>About</span></a></li>
+                    <li><a href="events.html"><span>Events</span></a></li>
+                    <li><a href="gallery.html" class="active"><span>Gallery</span></a></li>
+                    <li><a href="contact.html"><span>Contact</span></a></li>
+                    <li><a href="tickets.html" class="btn btn-gradient"><span>Get Tickets</span></a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1 data-aos="fade-up">Gallery</h1>
+                <p data-aos="fade-up" data-aos-delay="200">Moments that inspire</p>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery-filters" data-aos="fade-up">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="events">Events</button>
+                    <button class="filter-btn" data-filter="people">People</button>
+                    <button class="filter-btn" data-filter="art">Art</button>
+                    <button class="filter-btn" data-filter="tech">Tech</button>
+                </div>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="events" data-aos="fade-up" data-aos-delay="200">
+                        <img src="images/events/neon-dreams-stage.jpg" alt="Neon Dreams Stage">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Neon Dreams 2023</h3>
+                                <p>The main stage at our most recent event</p>
+                                <button class="btn btn-text">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="people" data-aos="fade-up" data-aos-delay="250">
+                        <img src="images/events/creative-collaboration.jpg" alt="Creative Collaboration">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Community Spirit</h3>
+                                <p>Our amazing attendees creating together</p>
+                                <button class="btn btn-text">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="art" data-aos="fade-up" data-aos-delay="300">
+                        <img src="images/events/interactive-art.jpg" alt="Interactive Installation">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Interactive Art</h3>
+                                <p>Visitors engaging with digital art</p>
+                                <button class="btn btn-text">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="tech" data-aos="fade-up" data-aos-delay="350">
+                        <img src="images/events/tech-showcase.jpg" alt="Tech Innovation">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Future Tech</h3>
+                                <p>Cutting-edge technology on display</p>
+                                <button class="btn btn-text">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="events" data-aos="fade-up" data-aos-delay="400">
+                        <img src="images/events/concert-crowd.jpg" alt="Event Crowd">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Energy Unleashed</h3>
+                                <p>The crowd at peak moment</p>
+                                <button class="btn btn-text">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="art" data-aos="fade-up" data-aos-delay="450">
+                        <img src="images/events/immersive-art.jpg" alt="Art Exhibit">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Visual Wonder</h3>
+                                <p>One of our immersive art pieces</p>
+                                <button class="btn btn-text">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- New gallery items -->
+                    <div class="gallery-item" data-category="people" data-aos="fade-up" data-aos-delay="500">
+                        <img src="images/events/workshop-session.jpg" alt="Workshop Session">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Innovation Workshop</h3>
+                                <p>Participants brainstorming new ideas</p>
+                                <button class="btn btn-text">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="tech" data-aos="fade-up" data-aos-delay="550">
+                        <img src="images/events/vr-experience.jpg" alt="VR Experience">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Virtual Reality Zone</h3>
+                                <p>Exploring new dimensions with VR</p>
+                                <button class="btn btn-text">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-gallery">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>Relive the Experience</h2>
+                    <p>Watch highlights from our events</p>
+                </div>
+                
+                <div class="video-grid">
+                    <div class="video-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="video-thumbnail">
+                            <video controls poster="images/video-thumbnails/recap-2022.jpg">
+                                <source src="videos/ideaventure-2022-recap.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="video-duration">3:45</div>
+                        </div>
+                        <h3>IdeaVenture 2022 Recap</h3>
+                        <p>Watch the best moments from last year</p>
+                    </div>
+                    
+                    <div class="video-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="video-thumbnail">
+                            <video controls poster="images/video-thumbnails/behind-scenes.jpg">
+                                <source src="videos/behind-the-scenes.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="video-duration">5:20</div>
+                        </div>
+                        <h3>Behind the Scenes</h3>
+                        <p>How we create the magic</p>
+                    </div>
+                    
+                    <!-- New video cards -->
+                    <div class="video-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="video-thumbnail">
+                            <video controls poster="images/video-thumbnails/speaker-highlights.jpg">
+                                <source src="videos/speaker-highlights.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="video-duration">4:15</div>
+                        </div>
+                        <h3>Speaker Highlights</h3>
+                        <p>Inspirational talks from industry leaders</p>
+                    </div>
+                    
+                    <div class="video-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="video-thumbnail">
+                            <video controls poster="images/video-thumbnails/art-installation.jpg">
+                                <source src="videos/art-installation-showcase.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="video-duration">2:50</div>
+                        </div>
+                        <h3>Art Installation Showcase</h3>
+                        <p>Interactive digital art experiences</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="images/logo.png" alt="IdeaVenture" class="footer-logo">
+                <p>Where ideas come alive and creativity thrives</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="links-column">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="links-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="links-column">
+                    <h3>Join Us</h3>
+                    <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Volunteer</a></li>
+                        <li><a href="#">Sponsors</a></li>
+                        <li><a href="#">Creators</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 IdeaVenture. All rights reserved. Made with <i class="fas fa-heart"></i> for innovators</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="main.js"></script>
+    <script src="animations.js"></script>
+</body>
+</html>
